@@ -1,3 +1,22 @@
+// ==UserScript==
+// @name        Miniflux YT Thumbnail
+// @namespace   miniflux-yt-thumbnail-user
+// @match       *://*/*
+// @grant       none
+// @version     1.0
+// @encoding    utf-8
+// @author      mateusjdev
+// @icon        https://raw.githubusercontent.com/miniflux/logo/master/icon.svg
+// @description User script for youtube feed thumbnails in miniflux
+// @updateURL   https://github.com/mateusjdev/miniflux-youtube-thumbnails/raw/master/miniflux-yt-thumbnail.user.js
+// @run-at      document-end
+// ==/UserScript==
+
+// Before using this script, change 'match' inside UserScript variables to the url of your miniflux instance, if any update are applied, theses values need to be changed again.
+// Example: 
+// @match       *://*.miniflux.example.com/*
+// @match       *://*.192.168.1.80:8080/*
+
 const makeThumbURL = (videoID) => `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`;
 const makeThumb = (src) => {
   const img = document.createElement("img");
