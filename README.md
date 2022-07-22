@@ -1,19 +1,21 @@
 # Miniflux Youtube Thumbnails (User Script)
 
-*user script for youtube feed thumbnails in miniflux*
+*User script for youtube feed thumbnails in miniflux*
 
 -------------------------------
 
-it can be installed by opening miniflux-yt-thumbnail.user.js in raw github or by copying the code and installing manualy
+It can be installed by opening miniflux-yt-thumbnail.user.js in raw github or by copying the code and installing manualy
 
 Before using this script, change 'match' inside UserScript variables to the url of your miniflux instance, if any update are applied, theses values need to be changed again. 
 
 **Example:**
 
+```
 // ==UserScript==
 // @match       *://*.miniflux.example.com/*
 // @match       *://*.192.168.1.80:8080/*
 // ==/UserScript==
+```
 
 https://github.com/miniflux/v2/issues/766
 
