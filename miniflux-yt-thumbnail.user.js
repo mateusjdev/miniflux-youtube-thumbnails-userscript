@@ -1,9 +1,9 @@
-const makeThumbURL = (videoID) => `https://img.youtube.com/vi/${videoID}/0.jpg`;
+const makeThumbURL = (videoID) => `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`;
 const makeThumb = (src) => {
   const img = document.createElement("img");
   img.src = src;
   img.style.float = "right";
-  img.style.height = "120px";
+  img.style.height = "80px";
   img.style.marginLeft = "5px";
   return img;
 };
@@ -29,11 +29,9 @@ const attachThumbs = () => {
   }
 };
 
-chrome.extension.sendMessage({}, () => {
-  const tryAttach = setInterval(() => {
-    if (document.readyState !== "complete") return;
+const tryAttach = setInterval(() => {
+  if (document.readyState !== "complete") return;
 
-    attachThumbs();
-    clearInterval(tryAttach);
-  }, 10);
-});
+  attachThumbs();
+  clearInterval(tryAttach);
+}, 10);

@@ -1,12 +1,10 @@
-# miniflux-youtube-thumbnails
+# Miniflux Youtube Thumbnails (User Script)
 
-*chrome extension for youtube feed thumbnails in miniflux*
+*user script for youtube feed thumbnails in miniflux*
 
 -------------------------------
 
-it can be installed by selecting the cloned repo under "Load unpacked" at chrome://extensions
-
-(you'll need to change the "example.com"s in the manifest.json first)
+it can be installed by opening miniflux-yt-thumbnail.user.js in raw github or by copying the code and installing manualy
 
 https://github.com/miniflux/v2/issues/766
 
