@@ -3,6 +3,7 @@
 // @namespace   miniflux-yt-thumbnail-user
 // @match       *://*/*
 // @grant       none
+// @inject-into content
 // @version     1.0
 // @encoding    utf-8
 // @author      mateusjdev
@@ -14,8 +15,8 @@
 
 // Before using this script, change 'match' inside UserScript variables to the url of your miniflux instance, if any update are applied, theses values need to be changed again.
 // Example: 
-// @match       *://*.miniflux.example.com/*
-// @match       *://*.192.168.1.80:8080/*
+// @match       http*://*.miniflux.example.com/*
+// @match       http*://192.168.1.80:8080/*
 
 const makeThumbURL = (videoID) => `https://img.youtube.com/vi/${videoID}/mqdefault.jpg`;
 const makeThumb = (src) => {
