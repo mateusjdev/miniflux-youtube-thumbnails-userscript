@@ -1,19 +1,19 @@
 // ==UserScript==
 // @name        Miniflux YT Thumbnail
 // @namespace   miniflux-yt-thumbnail-user
-// @match       *://*/*
 // @grant       none
 // @inject-into content
-// @version     1.0
+// @version     1.0.1
 // @encoding    utf-8
-// @author      mateusjdev
+// @author      sentriz, mateusjdev
 // @icon        https://raw.githubusercontent.com/miniflux/logo/master/icon.svg
 // @description User script for youtube feed thumbnails in miniflux
 // @updateURL   https://github.com/mateusjdev/miniflux-youtube-thumbnails/raw/master/miniflux-yt-thumbnail.user.js
 // @run-at      document-end
 // ==/UserScript==
 
-// Before using this script, change 'match' inside UserScript variables to the url of your miniflux instance, if any update are applied, theses values need to be changed again.
+// Before using this script, change '@match' inside scripts settings or UserScript variables to the url of your miniflux instance,
+// if you use chose to do it in the code itself, on every update applied theses values need to be changed again.
 // Example: 
 // @match       http*://*.miniflux.example.com/*
 // @match       http*://192.168.1.80:8080/*
