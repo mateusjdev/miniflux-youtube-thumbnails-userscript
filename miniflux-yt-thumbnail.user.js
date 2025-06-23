@@ -3,7 +3,7 @@
 // @namespace   miniflux-yt-thumbnail-user
 // @grant       none
 // @inject-into content
-// @version     1.0.1
+// @version     1.0.2
 // @encoding    utf-8
 // @author      sentriz, mateusjdev
 // @icon        https://raw.githubusercontent.com/miniflux/logo/master/icon.svg
@@ -14,7 +14,7 @@
 
 // Before using this script, change '@match' inside scripts settings or UserScript variables to the url of your miniflux instance,
 // if you use chose to do it in the code itself, on every update applied theses values need to be changed again.
-// Example: 
+// Example:
 // @match       http*://*.miniflux.example.com/*
 // @match       http*://192.168.1.80:8080/*
 
@@ -28,7 +28,7 @@ const makeThumb = (src) => {
   return img;
 };
 
-const findVideoIDExpr = /watch\?v=([0-9a-zA-Z-_]+)/;
+const findVideoIDExpr = /(?:watch\?v=|shorts\/)([0-9a-zA-Z-_]+)/;
 const findVideoID = (url) => url.match(findVideoIDExpr)?.[1];
 const findVideoURL = (elm) =>
   elm.querySelector(".item-meta > .item-meta-icons a[target=_blank]")?.href;
